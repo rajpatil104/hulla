@@ -1,6 +1,4 @@
 
-come and follow my lead !!
-
 def copy():
     global tmp
     tmp = []
@@ -66,7 +64,7 @@ def anticlock(a):
         for j in range(0,3):
             faces[a][i][j]=tmp[a][j][(2*i+2)%3]
 
-def u():
+def up():
     copy()
     faces[0][0] = tmp[2][0]
     faces[4][0] = tmp[0][0]
@@ -74,7 +72,7 @@ def u():
     faces[2][0] = tmp[5][0]
     anticlock(1)
     printcube()
-def b():
+def bottom():
     copy()
     faces[0][2] = tmp[2][2]
     faces[4][2] = tmp[0][2]
@@ -85,7 +83,7 @@ def b():
     anticlock(3)
     printcube()
     
-def r():
+def right():
     copy()
     for i in range(0,3):
         faces[1][i][2]=tmp[0][i][2]
@@ -100,7 +98,7 @@ def r():
     anticlock(4)
     printcube()
 
-def l():
+def left():
     copy()
     for i in range(0,3):
         faces[1][i][0]=tmp[0][i][0]
@@ -120,6 +118,8 @@ def printcube():
         print(str(faces[2][i][0])+str(faces[2][i][1])+str(faces[2][i][2])+str(faces[0][i][0])+str(faces[0][i][1])+str(faces[0][i][2])+str(faces[4][i][0])+str(faces[4][i][1])+str(faces[4][i][2])+str(faces[5][i][0])+str(faces[5][i][1])+str(faces[5][i][2]))
     for i in range(0,3):
         print("   "+str(faces[3][i][0])+str(faces[3][i][1])+str(faces[3][i][2])+"      ")
+        
+
 makecube()
 
 
