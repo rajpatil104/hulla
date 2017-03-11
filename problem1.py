@@ -55,7 +55,9 @@ def makecube():
     faces.append(f4)
     faces.append(f5)
     
-    
+#;sfkajkljgklajglkajga
+#lgjlaksgjlkasjglkasj
+#jgalksjgalkjglakjglkj    
     
 
 def anticlock(a):
