@@ -1,3 +1,6 @@
+
+come and follow my lead !!
+
 def copy():
     global tmp
     tmp = []
